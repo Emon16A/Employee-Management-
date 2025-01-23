@@ -1,0 +1,9 @@
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(255) NOT NULL,
+    lastName VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    salary DECIMAL(10, 2) NOT NULL,
+    date DATE NOT NULL,
+    isPermanent BOOLEAN DEFAULT FALSE
+);
